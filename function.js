@@ -61,6 +61,9 @@ $(document).ready(function () {
 		} else if ((space3 == space5) && (space5 == space7)) {
 			return space7;
 		}
+		else if(space3 && space6 && space7 &&space8 && space9){ 
+			$('body').append('<div class="winner"></span>Draw</div><button onclick="location.reload();"id="reload">Play Again</button>');
+		}
 		// no winner
 		return -1;
 	}
